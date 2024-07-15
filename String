@@ -1,0 +1,23 @@
+import java.util.*;
+public class Matrix
+{
+    public static void main(String[]args)
+    {
+        Scanner s = new Scanner(System.in);
+        String str = s.nextLine();
+        String[] str1 = str.split(" ");
+        int i=0;
+        for(i=0;i<str1.length;i++)
+        {
+            System.out.println(str1[i]+" - "+str1[i].length());
+        }
+        for(i=0;i<str1.length;i++)
+        {
+            if(str1[i].length()%2==0)
+            {
+                System.out.println("Even Length of Words : "+str1[i]);
+            
+            }
+        }
+    }
+}
